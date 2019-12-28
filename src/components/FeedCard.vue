@@ -20,17 +20,17 @@
                         <v-chip
                             label
                             color="secondary"
-                            class="mb-1"
+                            class="mb-1 text-uppercase"
                             small
                         >
-                            REVIEW
+                            {{articleMeta.section}}
                         </v-chip>
                         <h3 class="title font-weight-bold text-capitalize white--text mb-2">
-                            The review
+                            {{articleMeta.title}}
                         </h3>
-                        <div class="white--text">
-                            Sevy L <br>
-                            Date
+                        <div class="white--text text-capitalize">
+                            {{articleMeta.author}} <br>
+                            {{articleMeta.date}}
                         </div>
                     </v-col>
                     <v-col class="text-right pb-0 pr-0" align-self="end">
@@ -39,6 +39,7 @@
                             label
                             color="primary"
                             @click.stop=""
+                            :to='`/article/${encodeTitle(articleMeta.title)}`'
                             class="text-uppercase"
                         >
                             Read More
@@ -53,10 +54,13 @@
 
 <script>
 import BaseCard from './base/BaseCard'
+import TitleEncoder from '../mixins/TitleEncoder'
 
 export default {
+    mixins: [TitleEncoder],
     props: {
-        prominent: Boolean
+        prominent: Boolean,
+        articleMeta: Object
     },
     components: {
         BaseCard

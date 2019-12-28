@@ -9,12 +9,15 @@
           <!-- banner -->
           <slot />
       </v-col>
-          <!-- will be populated from state -->
-    <feed-card :prominent='false'></feed-card>
-    <feed-card :prominent='false'></feed-card>
-    <feed-card :prominent='false'></feed-card>
-    <feed-card :prominent='true'></feed-card>
-    <feed-card :prominent='true'></feed-card>
+          
+    <!-- feed cards are populated from the state -->
+    <feed-card 
+    v-for="article in articles" 
+    :articleMeta="getArticleMeta(article)"
+    :prominent="article.prominent"
+    :key="article.title"
+    />
+
   </v-row>
 </v-container>
 </template>
@@ -25,6 +28,23 @@ import FeedCard from './FeedCard'
 export default {
     components: {
         FeedCard
+    },
+    computed: {
+        articles() {
+            return this.$store.state.articles;
+        }
+    },
+    methods: {
+        getArticleMeta(article) {
+            return {
+                title: article.title,
+                heroSrc: article.heroSrc,
+                section: article.section,
+                author: article.author,
+                likes: article.likes,
+                date: article.date
+            }
+        }
     }
 }
 </script>

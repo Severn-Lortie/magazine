@@ -14,6 +14,7 @@
                 <v-list-item
                     v-for='(link, i) in links'
                     :key='i'
+                    class="text-capitalize"
                 >
                     <v-list-item-icon>
                         <v-icon>
@@ -38,13 +39,7 @@
 export default {
     data() {
         return {
-            item: 0,
-            links: [
-                'reviews',
-                'news',
-                'opinion',
-                'editors note',
-            ]
+            item: 0
         }
     },
     computed: {
@@ -55,6 +50,9 @@ export default {
             set(newVal) {
                 this.$store.commit('setDrawer', newVal);
             }
+        },
+        links() {
+            return this.$store.getters.uniqueArticleSections;
         }
     }
 }

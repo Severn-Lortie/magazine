@@ -41,14 +41,9 @@
 
 <script>
 export default {
-    data() {
-        return {
-            links: [
-                'reviews',
-                'news',
-                'opinion',
-                'editors note',
-            ]
+    computed: {
+        links() {
+            return this.$store.getters.uniqueArticleSections;
         }
     }
 }

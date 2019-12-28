@@ -7,15 +7,18 @@
     cols="5"
     class="article-text grey--text text--darken-4"
     >  
-    <!-- will be markdown componenet -->
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio delectus quo ullam nostrum, facere placeat, molestias sapiente blanditiis magni consequatur similique! Maiores ipsum commodi esse, labore debitis recusandae neque ipsa?
+       <vue-markdown/>
     </v-col>
   </v-row>
 </template>
 
 <script>
-export default {
+import VueMarkdown from 'vue-markdown';
 
+export default {
+  components: {
+    VueMarkdown
+  }
 }
 </script>
 
