@@ -1,5 +1,6 @@
 <template>
 <v-app>
+    <app-nav/>
     <app-toolbar />
     <v-content>
         <router-view />
@@ -8,11 +9,13 @@
 </template>
 
 <script>
+import AppNav from './components/core/AppNav'
 import AppToolbar from './components/core/AppToolbar'
 
 export default {
     components: {
-        AppToolbar
+        AppToolbar,
+        AppNav
     }
 }
 </script>

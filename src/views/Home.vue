@@ -1,7 +1,9 @@
 <template>
+<div>
   <app-feed>
     <app-banner />
-  </app-feed>
+  </app-feed> 
+</div>
 </template>
 
 <script>
@@ -15,7 +17,3 @@ export default {
   }
 }
 </script>
-
-<style>
-
-</style>

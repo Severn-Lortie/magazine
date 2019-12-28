@@ -8,16 +8,18 @@
             <v-row
                 align='center'
                 justify='center'
+                class="mx-0"
             >
                 <v-col
-                    cols='7'
+                    xs="12"
+                    md="6"
                     class='text-left'
                 >
                     <div class="typewriter">
                         <h3 class="display-3 white--text font-weight-bold">
-                            Philosophy Magazine
+                            Philosophy 
                         </h3>
-                    </div>   
+                    </div>  
                     <div class="subtitle text-uppercase white--text">
                         Discovering the true meaning of things
                     </div>
@@ -57,7 +59,7 @@ export default {
     /* Ensures the content is not revealed until the animation */
     border-right: .05em solid orange;
     /* The typwriter cursor */
-    white-space: nowrap;
+    white-space: nowrap; 
     /* Keeps the content on a single line */
     margin: 0 auto;
     /* Gives that scrolling effect as the typing happens */
@@ -86,7 +88,7 @@ export default {
     }
 
     50% {
-        border-color: #2A80D4;
+        border-color: #2A80D5;
     }
 }
 </style>

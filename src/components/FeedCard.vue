@@ -1,9 +1,8 @@
 <template>
 <v-col
     xs='12'
-    md='6'
+    :md='prominent ? 6 : 4'
 >
-    <!-- size will be based on prominent property -->
     <base-card height="350" dark>
         <v-img
             src='https://source.unsplash.com/collection/1199299/'
@@ -56,6 +55,9 @@
 import BaseCard from './base/BaseCard'
 
 export default {
+    props: {
+        prominent: Boolean
+    },
     components: {
         BaseCard
     }

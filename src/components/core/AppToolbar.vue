@@ -2,31 +2,31 @@
 <v-app-bar
     app
     flat
-    color="grey lighten-3"
+    color="grey lighten-4"
 >
-    <app-nav>
-        <template scope="defaultScope">
-             <v-btn
-             @click="toggleDrawer(defaultScope)"
-             >
-             nav
-             </v-btn>
-        </template>
-    </app-nav>
+    <v-app-bar-nav-icon
+        @click="$store.commit('setDrawer', true)"
+        v-if="$vuetify.breakpoint.mdAndDown"
+    >
+    </v-app-bar-nav-icon>
     <v-container class="mx-auto py-0">
-        <v-row align="center">
-            <v-avatar class="mr-6">
-                <v-img :src="require('../../assets/logo.png')"></v-img>
+        <v-row align="center pl-3 pr-3">
+            <v-avatar class="mr-4">
+                <v-img :src="require('@/assets/logo.png')"></v-img>
             </v-avatar>
-            <v-btn
-                v-for="(link, i) in links"
-                text
-                :key="i"
-                class="ml-0"
+            <div
+            v-if="$vuetify.breakpoint.mdAndUp"
             >
-                {{link}}
-            </v-btn>
-            <v-spacer />
+                <v-btn
+                    v-for="(link, i) in links"
+                    text
+                    :key="i"
+                    class="ml-0"
+                >
+                    {{link}}
+                </v-btn>
+            </div>
+            <v-spacer></v-spacer>
             <v-text-field
                 append-icon="mdi-magnify"
                 flat
@@ -40,18 +40,7 @@
 </template>
 
 <script>
-import AppNav from'./AppNav'
-
 export default {
-    components: {
-        AppNav
-    },
-    methods: {
-        toggleDrawer(defaultScope) {
-            defaultScope.activated = !defaultScope.activated;
-            console.log(defaultScope.activated) //eslint-disable-line
-        }
-    },
     data() {
         return {
             links: [
