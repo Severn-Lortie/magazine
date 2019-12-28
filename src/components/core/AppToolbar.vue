@@ -10,9 +10,9 @@
     >
     </v-app-bar-nav-icon>
     <v-container class="mx-auto py-0">
-        <v-row align="center pl-3 pr-3">
+        <v-row align="center" class="pl-3 pr-3">
             <v-avatar class="mr-4">
-                <v-img :src="require('@/assets/logo.png')"></v-img>
+                <v-img :src="require('@/assets/img/logo.png')"></v-img>
             </v-avatar>
             <div
             v-if="$vuetify.breakpoint.mdAndUp"

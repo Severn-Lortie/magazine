@@ -16,11 +16,11 @@
                     class='text-left'
                 >
                     <div class="typewriter">
-                        <h3 class="display-3 white--text font-weight-bold">
+                        <h3 class="display-3 white--text font-weight-bold ">
                             Philosophy 
                         </h3>
                     </div>  
-                    <div class="subtitle text-uppercase white--text">
+                    <div class="headline white--text">
                         Discovering the true meaning of things
                     </div>
                     <v-btn
@@ -63,7 +63,7 @@ export default {
     /* Keeps the content on a single line */
     margin: 0 auto;
     /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em;
+    letter-spacing: .03em;
     /* Adjust as needed */
     animation:
         typing 1.5s steps(40, end),
