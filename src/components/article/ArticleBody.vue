@@ -1,10 +1,10 @@
 <template>
   <v-row
   justify="center"
-  class="mt-8"
+  class="mt-2"
   >
     <v-col
-    cols="5"
+    sm="6"
     class="article-text grey--text text--darken-4"
     >  
        <vue-markdown :source="bodyText"/>
