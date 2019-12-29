@@ -23,6 +23,7 @@
                             color="secondary"
                             class="mb-1 text-uppercase"
                             small
+                            :to="`/section/${encodeTitle(articleMeta.section)}`"
                         >
                             {{articleMeta.section}}
                         </v-chip>
@@ -35,16 +36,12 @@
                         </div>
                     </v-col>
                     <v-col class="text-right pb-0 pr-0" align-self="end">
-                        <v-chip
-                            small
-                            label
-                            color="primary"
-                            @click.stop=""
-                            :to='`/article/${encodeTitle(articleMeta.title)}`'
-                            class="text-uppercase"
-                        >
-                            Read More
-                        </v-chip>
+                        <base-chip 
+                        text="Read More"
+                        small
+                        color="primary"
+                        :to="`/article/${encodeTitle(articleMeta.title)}`"
+                        />
                     </v-col>
                 </v-row>
             </v-container>
@@ -55,6 +52,8 @@
 
 <script>
 import BaseCard from './base/BaseCard'
+import BaseChip from './base/BaseChip'
+
 import TitleEncoder from '../mixins/TitleEncoder'
 
 export default {
@@ -64,7 +63,8 @@ export default {
         articleMeta: Object
     },
     components: {
-        BaseCard
+        BaseCard,
+        BaseChip
     }
 }
 </script>
