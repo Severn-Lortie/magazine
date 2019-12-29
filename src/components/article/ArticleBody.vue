@@ -7,7 +7,7 @@
     cols="5"
     class="article-text grey--text text--darken-4"
     >  
-       <vue-markdown/>
+       <vue-markdown :source="bodyText"/>
     </v-col>
   </v-row>
 </template>
@@ -18,6 +18,9 @@ import VueMarkdown from 'vue-markdown';
 export default {
   components: {
     VueMarkdown
+  },
+  props: {
+    bodyText: String
   }
 }
 </script>

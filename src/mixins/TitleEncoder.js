@@ -7,6 +7,10 @@ const titleEncoder = {
             const dashed = noSpecialChars.replace(/ /g, '-');
             
             return dashed;
+        },
+        decodeTitle(title) {
+            // this method won't return the special chars.
+            return title.replace(/-/g, " ")
         }
     }
 }

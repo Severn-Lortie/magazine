@@ -11,7 +11,7 @@ export default new Vuex.Store({
     articles: [
       {
         title: 'robots are creepy',
-        heroSrc: '',
+        heroSrc: 'https://source.unsplash.com/collection/1199299/',
         bodyText: 'Sunt veniam aliquip duis consectetur reprehenderit laboris fugiat quis consectetur nostrud consequat velit ea. Id aliqua aute excepteur nisi ipsum id dolor tempor deserunt officia velit nulla. Nisi ex minim culpa incididunt proident aliqua reprehenderit adipisicing deserunt.',
         section: 'opinion',
         author: 'sevy l',
@@ -21,7 +21,7 @@ export default new Vuex.Store({
       },
       {
         title: 'movie review',
-        heroSrc: '',
+        heroSrc: 'https://source.unsplash.com/collection/1199299/',
         bodyText: 'Sunt veniam aliquip duis consectetur reprehenderit laboris fugiat quis consectetur nostrud consequat velit ea. Id aliqua aute excepteur nisi ipsum id dolor tempor deserunt officia velit nulla. Nisi ex minim culpa incididunt proident aliqua reprehenderit adipisicing deserunt.',
         section: 'review',
         author: 'sevy l',

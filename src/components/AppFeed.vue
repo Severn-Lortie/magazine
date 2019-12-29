@@ -26,12 +26,24 @@
 import FeedCard from './FeedCard'
 
 export default {
+    props: {
+        displaySection: {
+            type: String,
+            default: 'all'
+        }
+    },
     components: {
         FeedCard
     },
     computed: {
         articles() {
-            return this.$store.state.articles;
+            // return the section based on the displaySection prop, or all sections.
+            if (this.displaySection !== 'all') {
+                return this.$store.state.articles.filter(obj => obj.section === this.displaySection);
+            } else {
+                return this.$store.state.articles;
+            }
+            
         }
     },
     methods: {

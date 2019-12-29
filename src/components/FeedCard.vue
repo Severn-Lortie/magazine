@@ -4,8 +4,9 @@
     :md='prominent ? 6 : 4'
 >
     <base-card height="350" dark>
+    <!-- will be localized -->
         <v-img
-            src='https://source.unsplash.com/collection/1199299/'
+            :src='articleMeta.heroSrc' 
             height="100%"
         >
             <v-container fluid class="fill-height">

@@ -1,7 +1,7 @@
 <template>
 <base-card>
     <v-img
-        src="https://images.unsplash.com/photo-1468476396571-4d6f2a427ee7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1144&q=80"
+        :src="heroSrc"
         height='400'
     >
         <v-container class="fill-height">
@@ -16,21 +16,15 @@
                     class='text-left'
                 >
                     <div class="typewriter">
-                        <h3 class="display-3 white--text font-weight-bold ">
-                            Philosophy 
+                        <h3 class="display-3 white--text font-weight-bold text-capitalize">
+                            {{title}}
                         </h3>
                     </div>  
                     <div class="headline white--text">
-                        Discovering the true meaning of things
+                        {{subtitle[0].toUpperCase() + subtitle.substring(1, subtitle.length)}}
                     </div>
-                    <v-btn
-                        color="primary"
-                        rounded
-                        depressed
-                        class="mt-8"
-                    >
-                        subscribe
-                    </v-btn>
+                <!-- Action Button Slot -->
+                   <slot />
                 </v-col>
             </v-row>
         </v-container>
@@ -45,6 +39,11 @@ export default {
     components: {
         BaseCard
     },
+    props: {
+        title: String,
+        subtitle: String,
+        heroSrc: String
+    }
 }
 </script>
 
@@ -66,7 +65,7 @@ export default {
     letter-spacing: .03em;
     /* Adjust as needed */
     animation:
-        typing 1.5s steps(40, end),
+        typing 1.7s steps(40, end),
         blink-caret .75s step-end infinite;
 }
 
