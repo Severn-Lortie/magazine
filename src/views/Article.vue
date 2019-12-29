@@ -4,6 +4,7 @@
     :title="article.title" 
     :section="article.section" 
     :heroSrc="article.heroSrc"
+    :subtitle="article.subtitle"
     />
     
     <article-body 
