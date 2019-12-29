@@ -65,7 +65,7 @@ export default {
     letter-spacing: .03em;
     /* Adjust as needed */
     animation:
-        typing 1.7s steps(40, end),
+        typing 1.5s steps(40, end),
         blink-caret .75s step-end infinite;
 }
 
