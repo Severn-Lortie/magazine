@@ -25,6 +25,7 @@
                     text
                     :key="i"
                     class="ml-0"
+                    :to="`/section/${link}`"
                 >
                     {{link}}
                 </v-btn>
