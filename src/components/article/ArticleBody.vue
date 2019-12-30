@@ -1,7 +1,7 @@
 <template>
   <v-row
   justify="center"
-  class="mt-2"
+  class="mt-6"
   >
     <v-col
     sm="6"

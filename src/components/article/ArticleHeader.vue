@@ -8,7 +8,7 @@
             :to="`/section/${encodeTitle(section)}`"/>
             <p class="text-capitalize headline-title mb-0">{{ title }}</p>
             <p class="headline grey--text text--darken-2 mt-1 mb-12 text-capitalize">{{subtitle}}</p>
-            <v-img :src="heroSrc" class="mb-4">
+            <v-img :src="heroSrc">
             </v-img>
         </v-col>
     </v-row>
