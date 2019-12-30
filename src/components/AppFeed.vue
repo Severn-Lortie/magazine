@@ -1,29 +1,30 @@
 <template>
 <v-container class="mx-auto px-0">
     <v-row
-    align="start"
-    justify="start"
-    class="mx-0"
+        align="start"
+        justify="start"
+        class="mx-0"
     >
-      <v-col cols="12">
-          <!-- banner -->
-          <slot />
-      </v-col>
-          
-    <!-- feed cards are populated from the state -->
-    <feed-card 
-    v-for="article in articles" 
-    :articleMeta="getArticleMeta(article)"
-    :prominent="article.prominent"
-    :key="article.title"
-    />
+        <v-col cols="12">
+            <!-- banner -->
+            <slot />
+        </v-col>
 
-  </v-row>
+        <!-- feed cards are populated from the state -->
+        <feed-card
+            :articleMeta="getArticleMeta(article)"
+            :prominent="article.prominent"
+            v-for="article in articles"
+            :key="article.title"
+        />
+
+    </v-row>
 </v-container>
 </template>
 
 <script>
 import FeedCard from './FeedCard'
+//import FeedImage from './FeedImage'
 
 export default {
     props: {
@@ -33,7 +34,8 @@ export default {
         }
     },
     components: {
-        FeedCard
+        FeedCard,
+        //FeedImage
     },
     computed: {
         articles() {
@@ -43,7 +45,7 @@ export default {
             } else {
                 return this.$store.state.articles;
             }
-            
+
         }
     },
     methods: {
@@ -54,7 +56,8 @@ export default {
                 section: article.section,
                 author: article.author,
                 likes: article.likes,
-                date: article.date
+                date: article.date,
+                banner: article.banner
             }
         }
     }

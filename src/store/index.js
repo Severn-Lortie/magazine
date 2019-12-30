@@ -51,6 +51,11 @@ export default new Vuex.Store({
         likes: 0,
         date: 'date',
         prominent: false
+      },
+      {
+        banner: true,
+        prominent: true,
+        heroSrc: 'https://source.unsplash.com/random'
       }
     ]
 

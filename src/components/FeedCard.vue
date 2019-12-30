@@ -1,18 +1,25 @@
 <template>
 <v-col
     xs='12'
-    :md='prominent ? 6 : 4'
+    :md='prominentSize'
 >
-    <base-card height="350" dark>
-    <!-- will be localized -->
+    <base-card
+        height="350"
+        dark
+    >
+        <!-- will be localized -->
         <v-img
-            :src='articleMeta.heroSrc' 
+            :src='articleMeta.heroSrc'
             height="100%"
         >
-            <v-container fluid class="fill-height">
+            <v-container
+                fluid
+                class="fill-height"
+                v-if="!articleMeta.banner"
+            >
                 <v-row
-                class="text-right mx-0"
-                style="height: 100%;"
+                    class="text-right mx-0"
+                    style="height: 100%;"
                 >
                     <v-col
                         cols='12'
@@ -35,12 +42,15 @@
                             {{articleMeta.date}}
                         </div>
                     </v-col>
-                    <v-col class="text-right pb-0 pr-0" align-self="end">
-                        <base-chip 
-                        text="Read More"
-                        small
-                        color="primary"
-                        :to="`/article/${encodeTitle(articleMeta.title)}`"
+                    <v-col
+                        class="text-right pb-0 pr-0"
+                        align-self="end"
+                    >
+                        <base-chip
+                            text="Read More"
+                            small
+                            color="primary"
+                            :to="`/article/${encodeTitle(articleMeta.title)}`"
                         />
                     </v-col>
                 </v-row>
@@ -62,13 +72,18 @@ export default {
         prominent: Boolean,
         articleMeta: Object
     },
+    computed: {
+        prominentSize() {
+            if (this.articleMeta.banner) {
+                return '12';
+            } else {
+                return this.prominent ? 6 : 4;
+            }
+        }
+    },
     components: {
         BaseCard,
         BaseChip
     }
 }
 </script>
-
-<style>
-
-</style>
