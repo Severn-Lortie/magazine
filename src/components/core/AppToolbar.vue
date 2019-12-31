@@ -21,6 +21,13 @@
             </router-link>
             <div v-if="$vuetify.breakpoint.mdAndUp">
                 <v-btn
+                    text
+                    class="ml-0"
+                    to="/"
+                >
+                    Home
+                </v-btn>
+                <v-btn
                     v-for="(link, i) in links"
                     text
                     :key="i"
