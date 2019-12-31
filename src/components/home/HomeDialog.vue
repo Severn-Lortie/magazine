@@ -1,0 +1,40 @@
+<template>
+<v-dialog
+    width="400"
+    v-model="dialog"
+>
+    <template v-slot:activator="{ on }">
+        <slot :on="on" />
+    </template>
+
+    <v-card>
+        <v-card-title class="headline">
+            Subscribe
+        </v-card-title>
+        <v-card-text class="">
+            Subscriptions to this magazine cost <b>$5</b> a month. Members will gain unlimited accsess to all articles.
+        </v-card-text>
+        <v-card-actions>
+            <v-spacer />
+            <v-btn
+                text
+                color="primary"
+                @click="dialog = false"
+            >
+                ok
+            </v-btn>
+        </v-card-actions>
+    </v-card>
+
+</v-dialog>
+</template>
+
+<script>
+export default {
+    data() {
+        return {
+            dialog: false
+        }
+    }
+}
+</script>

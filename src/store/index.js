@@ -55,6 +55,7 @@ export default new Vuex.Store({
       {
         banner: true,
         prominent: true,
+        title: 'robot ad', // used as identifer
         heroSrc: 'https://source.unsplash.com/random'
       }
     ]
