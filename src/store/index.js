@@ -44,7 +44,7 @@ export default new Vuex.Store({
       {
         title: 'the ethics of robots',
         subtitle: 'what is right and what is wrong',
-        heroSrc: 'https://source.unsplash.com/collection/1199299/',
+        heroSrc: 'https://source.unsplash.com/collection/1199298/',
         bodyText: 'Sunt *veniam* aliquip ~~duis~~ consectetur reprehenderit laboris fugiat quis consectetur nostrud consequat velit ea. Id aliqua aute excepteur nisi ipsum id dolor tempor deserunt officia velit nulla. Nisi ex minim culpa incididunt proident aliqua reprehenderit adipisicing deserunt.',
         section: 'opinion',
         author: 'sevy l',
