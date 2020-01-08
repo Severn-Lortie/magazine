@@ -1,7 +1,7 @@
 <template>
 <v-col
     xs='12'
-    :md='prominentSize'
+    :md='size'
 >
     <base-card
         height="350"
@@ -11,6 +11,7 @@
         <v-img
             :src='articleMeta.heroSrc'
             height="100%"
+            gradient="rgba(0, 0, 0, .32), rgba(0, 0, 0, .42)"
         >
             <v-container
                 fluid
@@ -70,11 +71,12 @@ export default {
     mixins: [TitleEncoder],
     props: {
         prominent: Boolean,
+        fullSpan: Boolean,
         articleMeta: Object
     },
     computed: {
-        prominentSize() {
-            if (this.articleMeta.banner) {
+        size() {
+            if (this.articleMeta.banner || this.articleMeta.fullSpan) {
                 return '12';
             } else {
                 return this.prominent ? 6 : 4;

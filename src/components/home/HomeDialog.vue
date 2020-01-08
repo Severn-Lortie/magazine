@@ -12,7 +12,12 @@
             Subscribe
         </v-card-title>
         <v-card-text class="">
-            Subscriptions to this magazine cost <b>$5</b> a month. Members will gain unlimited accsess to all articles.
+            <p>Subscriptions to this magazine cost <i>$5</i> a month. Members will gain unlimited accsess to all articles.</p>
+            <p class="pb-0">
+                <b>Issue:</b> 100100 (Hex: #2B), (Decimal: 43)
+                <br>
+                <b>Published:</b> January 15th
+            </p>
         </v-card-text>
         <v-card-actions>
             <v-spacer />

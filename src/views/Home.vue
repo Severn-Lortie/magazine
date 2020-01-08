@@ -5,6 +5,7 @@
             title="philosophy"
             subtitle="discovering the true meaning of things."
             heroSrc="https://images.unsplash.com/photo-1577083862499-67b99e7370ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1618&q=80"
+            :main="true"
         >
             <home-dialog>
 
@@ -23,6 +24,7 @@
             </home-dialog>
         </app-banner>
     </app-feed>
+    
 </div>
 </template>
 

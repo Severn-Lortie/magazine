@@ -2,7 +2,8 @@
 <base-card>
     <v-img
         :src="heroSrc"
-        height='400'
+        :height='main ? 450 : 400'
+        gradient="rgba(0, 0, 0, .32), rgba(0, 0, 0, .42)"
     >
         <v-container class="fill-height">
             <v-row
@@ -11,20 +12,27 @@
                 class="mx-0"
             >
                 <v-col
-                    xs="12"
                     md="6"
+                    :xs="main ? 8 : 12"
                     class='text-left'
                 >
                     <div class="typewriter">
                         <h3 class="display-3 white--text font-weight-bold text-capitalize">
                             {{title}}
                         </h3>
-                    </div>  
+                    </div>
                     <div class="headline white--text">
                         {{subtitle[0].toUpperCase() + subtitle.substring(1, subtitle.length)}}
                     </div>
-                <!-- Action Button Slot -->
-                   <slot />
+                    <!-- Action Button Slot -->
+                    <slot />
+                </v-col>
+                <v-col
+                v-if="main"
+                cols="4"
+                class="text-right"
+                >  
+                    <home-highlights/>
                 </v-col>
             </v-row>
         </v-container>
@@ -34,15 +42,18 @@
 
 <script>
 import BaseCard from '../base/BaseCard'
+import HomeHighlights from '../home/HomeHighlights'
 
 export default {
     components: {
-        BaseCard
+        BaseCard,
+        HomeHighlights
     },
     props: {
         title: String,
         subtitle: String,
-        heroSrc: String
+        heroSrc: String,
+        main: Boolean
     }
 }
 </script>
@@ -58,7 +69,7 @@ export default {
     /* Ensures the content is not revealed until the animation */
     border-right: .05em solid orange;
     /* The typwriter cursor */
-    white-space: nowrap; 
+    white-space: nowrap;
     /* Keeps the content on a single line */
     margin: 0 auto;
     /* Gives that scrolling effect as the typing happens */

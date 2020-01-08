@@ -24,7 +24,6 @@
 
 <script>
 import FeedCard from './FeedCard'
-//import FeedImage from './FeedImage'
 
 export default {
     props: {
@@ -34,8 +33,7 @@ export default {
         }
     },
     components: {
-        FeedCard,
-        //FeedImage
+        FeedCard
     },
     computed: {
         articles() {
@@ -57,7 +55,8 @@ export default {
                 author: article.author,
                 likes: article.likes,
                 date: article.date,
-                banner: article.banner
+                banner: article.banner,
+                fullSpan: article.fullSpan
             }
         }
     }

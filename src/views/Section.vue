@@ -4,6 +4,7 @@
       :title="decodeTitle(section)"
       :subtitle="sectionMeta.subtitle"
       :heroSrc="sectionMeta.heroSrc"
+      :main="false"
       />
   </app-feed>
 </template>
