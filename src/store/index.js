@@ -33,44 +33,8 @@ export default new Vuex.Store({
       }
     },
 
-    // Example state (for dev)
-    articles: [{
-        title: 'robots are creepy',
-        subtitle: 'i hate the metal things',
-        heroSrc: 'https://images.unsplash.com/photo-1516110833967-0b5716ca1387?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80',
-        bodyText: 'Sunt veniam aliquip duis consectetur *reprehenderit* laboris fugiat quis consectetur nostrud consequat velit ea. Id aliqua aute excepteur nisi ipsum id dolor tempor deserunt officia velit nulla. Nisi ex minim culpa incididunt proident aliqua reprehenderit adipisicing deserunt.',
-        section: 'articles',
-        author: 'sevy l',
-        likes: 0,
-        date: 'date'
-      },
-      {
-        title: 'movie review',
-        subtitle: 'it was ok',
-        heroSrc: 'https://source.unsplash.com/collection/1199299/',
-        bodyText: 'Sunt  \n veniam aliquip duis consectetur reprehenderit laboris fugiat quis consectetur nostrud consequat velit ea. Id aliqua aute excepteur nisi ipsum id dolor tempor deserunt officia velit nulla. Nisi ex minim culpa incididunt proident aliqua reprehenderit adipisicing deserunt.',
-        section: 'review',
-        author: 'sevy l',
-        likes: 0,
-        date: 'date'
-      },
-      {
-        title: 'the ethics of robots',
-        subtitle: 'what is right and what is wrong',
-        heroSrc: 'https://source.unsplash.com/collection/1199298/',
-        bodyText: 'Sunt *veniam* aliquip ~~duis~~ consectetur reprehenderit laboris fugiat quis consectetur nostrud consequat velit ea. Id aliqua aute excepteur nisi ipsum id dolor tempor deserunt officia velit nulla. Nisi ex minim culpa incididunt proident aliqua reprehenderit adipisicing deserunt.',
-        section: 'news',
-        author: 'sevy l',
-        likes: 0,
-        date: 'date',
-      },
-      {
-        banner: true,
-        prominent: true,
-        title: 'robot ad', // used as identifer
-        heroSrc: 'https://source.unsplash.com/random'
-      }
-    ]
+    // require the articles from external json DATA file
+    articles: require('../data/articles.json').array
 
   },
 

@@ -2,7 +2,7 @@
 <base-card>
     <v-img
         :src="heroSrc"
-        :height='main ? 450 : 400'
+        :height='450'
         gradient="rgba(0, 0, 0, .32), rgba(0, 0, 0, .42)"
     >
         <v-container class="fill-height">
