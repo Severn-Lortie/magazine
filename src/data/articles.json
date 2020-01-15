@@ -32,6 +32,16 @@
             "likes": 0,
             "date": "January 10th",
             "prominent": true
+        },
+        {
+            "title": "This week's comic",
+            "subtitle": "A funny perspective on data privacy and ethics",
+            "heroSrc": "https://images.unsplash.com/photo-1498075702571-ecb018f3752d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1357&q=80",
+            "bodyText": "<img src=\"https:\/\/i.imgur.com\/Lav3QcY.png\" height=\"auto\" width=\"100%\"><\/img>\r\n<img src=\"https:\/\/i.imgur.com\/Tfu8dCZ.png\" height=\"auto\" width=\"100%\"><\/img>\r\n<img src=\"https:\/\/i.imgur.com\/q6oVM9z.png\" height=\"auto\" width=\"100%\"><\/img>\r\n",
+            "section": "comics",
+            "author": "Sevy L.",
+            "date": "January 14th",
+            "fullSpan": true
         }
     ]
 }
