@@ -5,17 +5,20 @@
     <v-content>
         <router-view />
     </v-content>
+    <app-footer />
 </v-app>
 </template>
 
 <script>
 import AppNav from './components/core/AppNav'
 import AppToolbar from './components/core/AppToolbar'
+import AppFooter from './components/core/AppFooter'
 
 export default {
     components: {
         AppToolbar,
-        AppNav
+        AppNav,
+        AppFooter
     }
 }
 </script>

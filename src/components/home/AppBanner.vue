@@ -30,7 +30,7 @@
                 <v-col
                 v-if="main"
                 cols="4"
-                class="text-right"
+                class="text-right ml-4"
                 >  
                     <home-highlights/>
                 </v-col>

@@ -49,7 +49,11 @@
             "author": "Sevy L.",
             "date": "January 14th"
         },
-
+        {
+            "title": "plato ad",
+            "banner": true,
+            "heroSrc": "https://s5.gifyu.com/images/ezgif.com-add-text0898e8ef0465c9ca.gif"
+        },
         {
             "title": "This issue: privacy in the modern era",
             "subtitle": "Should we value our right to personal information?",
@@ -59,14 +63,22 @@
             "author": "Anthony Arkansan",
             "likes": 0,
             "date": "January 8th",
-            "fullSpan": true
+            "prominent": true 
         },
-        
-        
         {
-            "title": "plato ad",
+            "title": "This weeks comic",
+            "subtitle": "How much does Alexa really know?",
+            "heroSrc": "https://images.unsplash.com/photo-1512446387219-99c19f8fe95f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80",
+            "bodyText": "<img src=\"https:\/\/i.imgur.com\/gYOW8tN.png\" height=\"auto\" width=\"100%\"><\/img>\r\n<img src=\"https:\/\/i.imgur.com\/xeBpPKq.png\" height=\"auto\" width=\"100%\"><\/img>\r\n<img src=\"https:\/\/i.imgur.com\/zF9UOeu.png\" height=\"auto\" width=\"100%\"><\/img>",
+            "section": "comics",
+            "author": "Sevy L.",
+            "date": "January 8th",
+            "prominent": true
+        },
+        {
+            "title": "socrates ad",
             "banner": true,
-            "heroSrc": "https://s5.gifyu.com/images/ezgif.com-add-text0898e8ef0465c9ca.gif"
+            "heroSrc": "https://i.imgur.com/5FIZR1D.jpg"
         },
         {
             "title": "On A.I.",
@@ -87,11 +99,6 @@
             "author": "Cleo Melia",
             "date": "January 12th",
             "prominent": true
-        },
-        {
-            "title": "socrates ad",
-            "banner": true,
-            "heroSrc": "https://i.imgur.com/5FIZR1D.jpg"
         }
     ]
 }

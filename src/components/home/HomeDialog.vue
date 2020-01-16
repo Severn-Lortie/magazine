@@ -16,7 +16,7 @@
             <p class="pb-0">
                 <b>Issue:</b> 100100 (Hex: #2B), (Decimal: 43)
                 <br>
-                <b>Published:</b> January 15th
+                <b>Published:</b> January 17th, 2020
             </p>
         </v-card-text>
         <v-card-actions>

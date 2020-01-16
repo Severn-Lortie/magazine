@@ -9,7 +9,7 @@
         >
             <home-dialog>
 
-                <template scope="defaultScope">
+                <template slot-scope="defaultScope">
                     <v-btn
                         color="primary"
                         rounded
