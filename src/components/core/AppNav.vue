@@ -14,6 +14,7 @@
                 <v-list-item
                     v-for='(link, i) in links'
                     :key='i'
+                    :to="`/section/${link}`"
                     class="text-capitalize"
                 >
                     <v-list-item-icon>

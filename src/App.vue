@@ -1,6 +1,6 @@
 <template>
 <v-app>
-    <app-nav/>
+    <app-nav />
     <app-toolbar />
     <v-content>
         <router-view />
@@ -19,30 +19,31 @@ export default {
     }
 }
 </script>
+
 <style>
 /* app-wide fonts: roboto */
 
-    /* regular */
+/* regular */
 @font-face {
     font-family: 'Droid Serif';
     src: url('./assets/font/DroidSerif-Regular-webfont.woff');
 }
 
-    /* bold */
+/* bold */
 @font-face {
     font-family: 'Droid Serif';
     src: url('./assets/font/DroidSerif-Bold-webfont.woff');
     font-weight: bold;
 }
 
-    /* italic */
+/* italic */
 @font-face {
     font-family: 'Droid Serif';
     src: url('./assets/font/DroidSerif-Italic-webfont.woff');
     font-style: italic;
 }
 
- /* bold-italic */
+/* bold-italic */
 @font-face {
     font-family: 'Droid Serif';
     src: url('./assets/font/DroidSerif-BoldItalic-webfont.woff');
@@ -54,7 +55,15 @@ export default {
 @font-face {
     font-family: 'Futura PT';
     src: url('./assets/font/FuturaPTMedium.woff');
-} 
+}
 
+/* app-wide style: blockquotes */
+
+blockquote {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 25px;
+    border-left: 3px solid #DADADA;
+    color: #8B8B8B;
+}
 </style>
-

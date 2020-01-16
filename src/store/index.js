@@ -16,8 +16,8 @@ export default new Vuex.Store({
         subtitle: "The latest news with philisophical relavence."
       },
       articles: {
-        heroSrc: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80',
-        subtitle: 'Artifical intelligence and philosophy.'
+        heroSrc: 'https://images.unsplash.com/photo-1439724017695-a10fb6a7c6e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1468&q=80',
+        subtitle: 'Privacy and philosophy.'
       },
       letters: {
         heroSrc: 'https://images.unsplash.com/photo-1557568192-2fafc8b5bdc9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80',
