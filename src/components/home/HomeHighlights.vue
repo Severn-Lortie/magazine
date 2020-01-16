@@ -34,12 +34,12 @@ export default {
     data() {
         return {
             items: [{
-                    title: '10 Reasons',
-                    subtitle: 'A.I. will replace you!',
+                    title: 'The Ethics of Whistleblowing',
+                    subtitle: "Exploring Edward Snowden's Morals",
                 },
                 {
-                    title: '5 Reasons',
-                    subtitle: 'A.I. will replace you!',
+                    title: 'Your Body is not You',
+                    subtitle: 'But new tech says otherwise...',
                 }
             ]
         }

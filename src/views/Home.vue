@@ -3,8 +3,8 @@
     <app-feed>
         <app-banner
             title="Studium Sapientiae"
-            subtitle="This issue: philosophy and privacy in the modern era."
-            heroSrc="https://images.unsplash.com/photo-1577083862499-67b99e7370ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1618&q=80"
+            subtitle="This issue: the philosophy of privacy in the modern era."
+            heroSrc="https://images.unsplash.com/photo-1493997575474-58d1db687da3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
             :main="true"
         >
             <home-dialog>
