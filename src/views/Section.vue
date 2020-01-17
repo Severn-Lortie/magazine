@@ -1,6 +1,9 @@
 <template>
   <app-feed :displaySection="decodeTitle(section)">
-      <section-banner></section-banner>
+      <section-banner
+      :title="decodeTitle(section)"
+      :subtitle="sectionMeta.subtitle"
+      ></section-banner>
   </app-feed>
 </template>
 

@@ -28,7 +28,7 @@
                     Home
                 </v-btn>
                 <v-btn
-                    v-for="(link, i) in links"
+                    v-for="(link, i) in mainLinks"
                     text
                     :key="i"
                     class="ml-0"
@@ -53,8 +53,8 @@
 <script>
 export default {
     computed: {
-        links() {
-            return this.$store.getters.uniqueArticleSections;
+        mainLinks() {
+            return (this.$store.getters.uniqueArticleSections);
         }
     }
 }

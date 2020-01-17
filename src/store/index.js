@@ -20,7 +20,7 @@ export default new Vuex.Store({
         subtitle: 'Letters to the editor, from our loyal readers.'
       },
       review: {
-        subtitle: 'A look at the movie HER through a philisophical lens.'
+        subtitle: 'A look at movies through a philisophical lens.'
       },
       comics: {
         subtitle: 'Have a laugh.'

@@ -1,12 +1,12 @@
 <template>
-  <v-footer padless>
+  <v-footer padless class="mt-12">
         <v-card
             color="grey lighten-4 mx-auto"
             flat
         >
             <v-card-text>
                 <v-btn text to="/sources">
-                    Sourcess
+                    Sources
                 </v-btn>
             </v-card-text>
         </v-card>

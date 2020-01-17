@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Article from '../views/Article.vue'
 import Section from '../views/Section.vue'
+import Sources from '../views/Sources.vue'
 
 Vue.use(VueRouter)
 
@@ -16,6 +17,11 @@ const routes = [
     path: '/section/:section',
     name: 'section',
     component: Section
+  },
+  {
+    path: '/sources',
+    name: 'sources',
+    component: Sources
   },
   {
     path: '/',
