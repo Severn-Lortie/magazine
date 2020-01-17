@@ -44,6 +44,7 @@
                 hide-details
                 solo-inverted
                 style="max-width: 300px"
+                v-if="!$vuetify.breakpoint.md"
             ></v-text-field>
         </v-row>
     </v-container>

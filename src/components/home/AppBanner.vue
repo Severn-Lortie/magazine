@@ -8,12 +8,13 @@
         <v-container class="fill-height">
             <v-row
                 align='center'
-                justify='center'
+                :justify='$vuetify.breakpoint.lgAndUp ? "center" : "start"'
                 class="mx-0"
             >
                 <v-col
-                    md="6"
-                    :xs="main ? 8 : 12"
+                    lg="6"
+                    md="12"
+                    xs="12"
                     class='text-left'
                 >
                     <div class="typewriter">
@@ -28,11 +29,13 @@
                     <slot />
                 </v-col>
                 <v-col
-                v-if="main"
-                cols="4"
-                class="text-right ml-4"
-                >  
-                    <home-highlights/>
+                    md="6"
+                    sm="12"
+                    xs="12"
+                    class="pl-0"
+                    :class="{'text-right': $vuetify.breakpoint.lg}"
+                >
+                    <home-highlights></home-highlights>
                 </v-col>
             </v-row>
         </v-container>
@@ -52,14 +55,12 @@ export default {
     props: {
         title: String,
         subtitle: String,
-        heroSrc: String,
-        main: Boolean
+        heroSrc: String
     }
 }
 </script>
 
 <style scoped>
-
 .typewriter {
     display: inline-block;
 }

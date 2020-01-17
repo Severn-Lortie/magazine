@@ -7,8 +7,9 @@
         <v-list-item
             v-for="(item) in items"
             :key="item.title"
+            class="pr-0"
         >
-            <v-list-item-content>
+            <v-list-item-content class="pt-0">
 
                 <v-list-item-title
                     class="headline"

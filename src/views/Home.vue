@@ -5,7 +5,6 @@
             title="Studium Sapientiae"
             subtitle="This issue: the philosophy of privacy in the modern era."
             heroSrc="https://images.unsplash.com/photo-1493997575474-58d1db687da3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
-            :main="true"
         >
             <home-dialog>
 
