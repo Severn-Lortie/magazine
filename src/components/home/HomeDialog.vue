@@ -14,7 +14,7 @@
         <v-card-text class="">
             <p>Subscriptions to this magazine cost <i>$5</i> a month. Members will gain unlimited accsess to all articles.</p>
             <p class="pb-0">
-                <b>Issue:</b> 100100 (Hex: #2B), (Decimal: 43)
+                <b>Issue:</b> 43
                 <br>
                 <b>Published:</b> January 17th, 2020
             </p>

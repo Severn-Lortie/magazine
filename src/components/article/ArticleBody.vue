@@ -5,7 +5,7 @@
   >
     <v-col
     sm="6"
-    class="article-text grey--text text--darken-4"
+    class="article-text grey--text text--darken-4 " 
     >  
        <vue-markdown :source="bodyText"/>
     </v-col>
