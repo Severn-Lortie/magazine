@@ -14,7 +14,7 @@
             align="center"
             class="pl-3 pr-3"
         >
-            <router-link to="/">
+            <router-link to="/" v-if="!$vuetify.breakpoint.xs">
                 <v-avatar class="mr-4">
                     <v-img :src="require('@/assets/img/logo.png')"></v-img>
                 </v-avatar>
