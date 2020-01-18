@@ -35,11 +35,11 @@ export default {
     data() {
         return {
             items: [{
-                    title: 'The Ethics of Whistleblowing',
+                    title: '🦸‍♂️ The Ethics of Whistleblowing',
                     subtitle: "Exploring Edward Snowden's Morals",
                 },
                 {
-                    title: 'Your Body is not You',
+                    title: '😨 Your Body is not You',
                     subtitle: 'But new tech says otherwise...',
                 }
             ]
