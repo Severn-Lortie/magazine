@@ -11,7 +11,7 @@ export default new Vuex.Store({
         subtitle: 'An introduction to the themes in this issue.'
       },
       news: {
-        subtitle: "The latest news with philisophical relavence."
+        subtitle: "The Latest News With Philosophical Relevance"
       },
       articles: {
         subtitle: 'Privacy and philosophy.'
@@ -20,7 +20,7 @@ export default new Vuex.Store({
         subtitle: 'Letters to the editor, from our loyal readers.'
       },
       review: {
-        subtitle: 'A look at movies through a philisophical lens.'
+        subtitle: 'A Look At Movies Through A Philosophical Lens.'
       },
       comics: {
         subtitle: 'Have a laugh.'
