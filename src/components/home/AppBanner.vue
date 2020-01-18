@@ -7,7 +7,7 @@
     >
         <v-container class="fill-height">
             <v-row
-                align='center'
+                align='start'
                 :justify='$vuetify.breakpoint.lgAndUp ? "center" : "start"'
                 class="mx-0"
             >
